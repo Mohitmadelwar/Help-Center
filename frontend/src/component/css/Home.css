@@ -1,0 +1,39 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "navbar"
+    "search"
+    "cards"
+    "footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+}
+
+.grid-navbar {
+  grid-area: navbar;
+  display: flex;
+}
+
+.grid-search {
+  grid-area: search;
+}
+
+.grid-cards {
+  grid-area: cards;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 16px;
+  padding: 16px; 
+}
+
+.card {
+  min-width: 350px;
+
+}
+
+.footer-section {
+  grid-area: footer;
+}
+
+
