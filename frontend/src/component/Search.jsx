@@ -15,7 +15,7 @@ const Search = ({ onSearch }) => {
     if (value.trim() !== "") {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/cards/search?q=${value}`
+          `https://help-center-sage.vercel.app/api/cards/search?q=${value}`
         );
         setSuggestions(response.data);
       } catch (error) {
