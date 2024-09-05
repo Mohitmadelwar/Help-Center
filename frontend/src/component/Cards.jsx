@@ -18,7 +18,7 @@ const Cards = ({ searchQuery }) => {
           response = await axios.get(`https://help-center-sage.vercel.app/api/cards/search?q=${searchQuery}`);
           setCards(response.data);
         } else {
-          response = await axios.get('https://help-center-sage.vercel.app/000/api/cards');
+          response = await axios.get('https://help-center-sage.vercel.app/api/cards');
           setCards(response.data);
         }
         setLoading(false);
